@@ -5,7 +5,7 @@ class Combinations
   def initialize(menu_path)
     parsed_menu = parse_menu(menu_path)
     @budget = parsed_menu[""]
-    @prices = parsed_menu.values.drop(1).sort.reverse
+    @prices = parsed_menu.values.drop(1).sort
     @least_summands = []
   end
 
